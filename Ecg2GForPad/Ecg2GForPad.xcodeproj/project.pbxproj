@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		68AF3EB51FA31C4E00C6E455 /* Ecg2GForPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3EB41FA31C4E00C6E455 /* Ecg2GForPadTests.m */; };
+		68AF3EC01FA31C4F00C6E455 /* Ecg2GForPadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3EBF1FA31C4F00C6E455 /* Ecg2GForPadUITests.m */; };
+		68AF3EDC1FA32B0300C6E455 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF3EDB1FA32B0300C6E455 /* Launch Screen.storyboard */; };
+		68AF3EDE1FA32DEE00C6E455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3ECF1FA31FE400C6E455 /* AppDelegate.m */; };
+		68AF3EDF1FA32DF200C6E455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3ED11FA31FE400C6E455 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68AF3EB11FA31C4E00C6E455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68AF3E901FA31C4E00C6E455 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68AF3E971FA31C4E00C6E455;
+			remoteInfo = Ecg2GForPad;
+		};
+		68AF3EBC1FA31C4E00C6E455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68AF3E901FA31C4E00C6E455 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 68AF3E971FA31C4E00C6E455;
+			remoteInfo = Ecg2GForPad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		68AF3E981FA31C4E00C6E455 /* Ecg2GForPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecg2GForPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AF3EA91FA31C4E00C6E455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AF3EB01FA31C4E00C6E455 /* Ecg2GForPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ecg2GForPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AF3EB41FA31C4E00C6E455 /* Ecg2GForPadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ecg2GForPadTests.m; sourceTree = "<group>"; };
+		68AF3EB61FA31C4E00C6E455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AF3EBB1FA31C4E00C6E455 /* Ecg2GForPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ecg2GForPadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68AF3EBF1FA31C4F00C6E455 /* Ecg2GForPadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ecg2GForPadUITests.m; sourceTree = "<group>"; };
+		68AF3EC11FA31C4F00C6E455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AF3ECE1FA31FE400C6E455 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		68AF3ECF1FA31FE400C6E455 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		68AF3ED01FA31FE400C6E455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68AF3ED11FA31FE400C6E455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		68AF3EDB1FA32B0300C6E455 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		68AF3E951FA31C4E00C6E455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68AF3EAD1FA31C4E00C6E455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68AF3EB81FA31C4E00C6E455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		68AF3E8F1FA31C4E00C6E455 = {
+			isa = PBXGroup;
+			children = (
+				68AF3E9A1FA31C4E00C6E455 /* Ecg2GForPad */,
+				68AF3EB31FA31C4E00C6E455 /* Ecg2GForPadTests */,
+				68AF3EBE1FA31C4E00C6E455 /* Ecg2GForPadUITests */,
+				68AF3E991FA31C4E00C6E455 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		68AF3E991FA31C4E00C6E455 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68AF3E981FA31C4E00C6E455 /* Ecg2GForPad.app */,
+				68AF3EB01FA31C4E00C6E455 /* Ecg2GForPadTests.xctest */,
+				68AF3EBB1FA31C4E00C6E455 /* Ecg2GForPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68AF3E9A1FA31C4E00C6E455 /* Ecg2GForPad */ = {
+			isa = PBXGroup;
+			children = (
+				68AF3ED21FA31FE400C6E455 /* Classes */,
+				68AF3ECD1FA31FE400C6E455 /* SupportingFiles */,
+			);
+			path = Ecg2GForPad;
+			sourceTree = "<group>";
+		};
+		68AF3EB31FA31C4E00C6E455 /* Ecg2GForPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				68AF3EB41FA31C4E00C6E455 /* Ecg2GForPadTests.m */,
+				68AF3EB61FA31C4E00C6E455 /* Info.plist */,
+			);
+			path = Ecg2GForPadTests;
+			sourceTree = "<group>";
+		};
+		68AF3EBE1FA31C4E00C6E455 /* Ecg2GForPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				68AF3EBF1FA31C4F00C6E455 /* Ecg2GForPadUITests.m */,
+				68AF3EC11FA31C4F00C6E455 /* Info.plist */,
+			);
+			path = Ecg2GForPadUITests;
+			sourceTree = "<group>";
+		};
+		68AF3ECD1FA31FE400C6E455 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				68AF3EA91FA31C4E00C6E455 /* Info.plist */,
+				68AF3ECE1FA31FE400C6E455 /* AppDelegate.h */,
+				68AF3ECF1FA31FE400C6E455 /* AppDelegate.m */,
+				68AF3EDB1FA32B0300C6E455 /* Launch Screen.storyboard */,
+				68AF3ED01FA31FE400C6E455 /* Assets.xcassets */,
+				68AF3ED11FA31FE400C6E455 /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		68AF3ED21FA31FE400C6E455 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				68AF3ED31FA31FE400C6E455 /* Copy */,
+				68AF3ED71FA31FE400C6E455 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		68AF3ED31FA31FE400C6E455 /* Copy */ = {
+			isa = PBXGroup;
+			children = (
+				68AF3ED41FA31FE400C6E455 /* Controllers */,
+				68AF3ED51FA31FE400C6E455 /* Models */,
+				68AF3ED61FA31FE400C6E455 /* Views */,
+			);
+			path = Copy;
+			sourceTree = "<group>";
+		};
+		68AF3ED41FA31FE400C6E455 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		68AF3ED51FA31FE400C6E455 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68AF3ED61FA31FE400C6E455 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68AF3ED71FA31FE400C6E455 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				68AF3ED81FA31FE400C6E455 /* Controllers */,
+				68AF3ED91FA31FE400C6E455 /* Models */,
+				68AF3EDA1FA31FE400C6E455 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		68AF3ED81FA31FE400C6E455 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		68AF3ED91FA31FE400C6E455 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68AF3EDA1FA31FE400C6E455 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		68AF3E971FA31C4E00C6E455 /* Ecg2GForPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68AF3EC41FA31C4F00C6E455 /* Build configuration list for PBXNativeTarget "Ecg2GForPad" */;
+			buildPhases = (
+				68AF3E941FA31C4E00C6E455 /* Sources */,
+				68AF3E951FA31C4E00C6E455 /* Frameworks */,
+				68AF3E961FA31C4E00C6E455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ecg2GForPad;
+			productName = Ecg2GForPad;
+			productReference = 68AF3E981FA31C4E00C6E455 /* Ecg2GForPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		68AF3EAF1FA31C4E00C6E455 /* Ecg2GForPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68AF3EC71FA31C4F00C6E455 /* Build configuration list for PBXNativeTarget "Ecg2GForPadTests" */;
+			buildPhases = (
+				68AF3EAC1FA31C4E00C6E455 /* Sources */,
+				68AF3EAD1FA31C4E00C6E455 /* Frameworks */,
+				68AF3EAE1FA31C4E00C6E455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68AF3EB21FA31C4E00C6E455 /* PBXTargetDependency */,
+			);
+			name = Ecg2GForPadTests;
+			productName = Ecg2GForPadTests;
+			productReference = 68AF3EB01FA31C4E00C6E455 /* Ecg2GForPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		68AF3EBA1FA31C4E00C6E455 /* Ecg2GForPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68AF3ECA1FA31C4F00C6E455 /* Build configuration list for PBXNativeTarget "Ecg2GForPadUITests" */;
+			buildPhases = (
+				68AF3EB71FA31C4E00C6E455 /* Sources */,
+				68AF3EB81FA31C4E00C6E455 /* Frameworks */,
+				68AF3EB91FA31C4E00C6E455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68AF3EBD1FA31C4E00C6E455 /* PBXTargetDependency */,
+			);
+			name = Ecg2GForPadUITests;
+			productName = Ecg2GForPadUITests;
+			productReference = 68AF3EBB1FA31C4E00C6E455 /* Ecg2GForPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68AF3E901FA31C4E00C6E455 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Auko;
+				TargetAttributes = {
+					68AF3E971FA31C4E00C6E455 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					68AF3EAF1FA31C4E00C6E455 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 68AF3E971FA31C4E00C6E455;
+					};
+					68AF3EBA1FA31C4E00C6E455 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 68AF3E971FA31C4E00C6E455;
+					};
+				};
+			};
+			buildConfigurationList = 68AF3E931FA31C4E00C6E455 /* Build configuration list for PBXProject "Ecg2GForPad" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 68AF3E8F1FA31C4E00C6E455;
+			productRefGroup = 68AF3E991FA31C4E00C6E455 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				68AF3E971FA31C4E00C6E455 /* Ecg2GForPad */,
+				68AF3EAF1FA31C4E00C6E455 /* Ecg2GForPadTests */,
+				68AF3EBA1FA31C4E00C6E455 /* Ecg2GForPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68AF3E961FA31C4E00C6E455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68AF3EDC1FA32B0300C6E455 /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68AF3EAE1FA31C4E00C6E455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68AF3EB91FA31C4E00C6E455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68AF3E941FA31C4E00C6E455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68AF3EDF1FA32DF200C6E455 /* main.m in Sources */,
+				68AF3EDE1FA32DEE00C6E455 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68AF3EAC1FA31C4E00C6E455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68AF3EB51FA31C4E00C6E455 /* Ecg2GForPadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68AF3EB71FA31C4E00C6E455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68AF3EC01FA31C4F00C6E455 /* Ecg2GForPadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		68AF3EB21FA31C4E00C6E455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68AF3E971FA31C4E00C6E455 /* Ecg2GForPad */;
+			targetProxy = 68AF3EB11FA31C4E00C6E455 /* PBXContainerItemProxy */;
+		};
+		68AF3EBD1FA31C4E00C6E455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 68AF3E971FA31C4E00C6E455 /* Ecg2GForPad */;
+			targetProxy = 68AF3EBC1FA31C4E00C6E455 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		68AF3EC21FA31C4F00C6E455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		68AF3EC31FA31C4F00C6E455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68AF3EC51FA31C4F00C6E455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P982ZUUW8;
+				INFOPLIST_FILE = "$(SRCROOT)/Ecg2GForPad/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanhu.Ecg.Ecg2GForPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		68AF3EC61FA31C4F00C6E455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P982ZUUW8;
+				INFOPLIST_FILE = "$(SRCROOT)/Ecg2GForPad/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanhu.Ecg.Ecg2GForPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		68AF3EC81FA31C4F00C6E455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P982ZUUW8;
+				INFOPLIST_FILE = Ecg2GForPadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanhu.Ecg.Ecg2GForPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ecg2GForPad.app/Ecg2GForPad";
+			};
+			name = Debug;
+		};
+		68AF3EC91FA31C4F00C6E455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P982ZUUW8;
+				INFOPLIST_FILE = Ecg2GForPadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanhu.Ecg.Ecg2GForPadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ecg2GForPad.app/Ecg2GForPad";
+			};
+			name = Release;
+		};
+		68AF3ECB1FA31C4F00C6E455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P982ZUUW8;
+				INFOPLIST_FILE = Ecg2GForPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanhu.Ecg.Ecg2GForPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ecg2GForPad;
+			};
+			name = Debug;
+		};
+		68AF3ECC1FA31C4F00C6E455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P982ZUUW8;
+				INFOPLIST_FILE = Ecg2GForPadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanhu.Ecg.Ecg2GForPadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ecg2GForPad;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68AF3E931FA31C4E00C6E455 /* Build configuration list for PBXProject "Ecg2GForPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68AF3EC21FA31C4F00C6E455 /* Debug */,
+				68AF3EC31FA31C4F00C6E455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68AF3EC41FA31C4F00C6E455 /* Build configuration list for PBXNativeTarget "Ecg2GForPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68AF3EC51FA31C4F00C6E455 /* Debug */,
+				68AF3EC61FA31C4F00C6E455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68AF3EC71FA31C4F00C6E455 /* Build configuration list for PBXNativeTarget "Ecg2GForPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68AF3EC81FA31C4F00C6E455 /* Debug */,
+				68AF3EC91FA31C4F00C6E455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68AF3ECA1FA31C4F00C6E455 /* Build configuration list for PBXNativeTarget "Ecg2GForPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68AF3ECB1FA31C4F00C6E455 /* Debug */,
+				68AF3ECC1FA31C4F00C6E455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 68AF3E901FA31C4E00C6E455 /* Project object */;
+}
