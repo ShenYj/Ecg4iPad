@@ -1,0 +1,100 @@
+//
+//  PrefixHeader.pch
+//  Ecg2GForPad
+//
+//  Created by ecg on 2017/10/27.
+//  Copyright © 2017年 Auko. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+
+#ifdef __OBJC__
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef DEBUG
+#define NSLog(fmt, ...) NSLog((@"%s [Line %d] -----------------------> " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+#pragma mark - 头文件
+
+#import "Masonry.h"
+#import "MJRefresh.h"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+
+
+#pragma mark - 常用宏
+#define DB_BasePath NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject  // 数据库的basePath
+#define iOS8 (([UIDevice currentDevice].systemVersion.floatValue) >= (8.0))                     //  iOS 8
+#define iOS9 (([UIDevice currentDevice].systemVersion.floatValue) >= (9.0))                     //  iOS 9
+#define iOS10 (([UIDevice currentDevice].systemVersion.floatValue) >= (10.0))                   //  iOS 10
+#define iOS11 (([UIDevice currentDevice].systemVersion.floatValue) >= (11.0))                   //  iOS 11
+#define SCREEN_BOUNDS [UIScreen mainScreen].bounds                                              //  屏幕bounds
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)                                //  屏幕宽度
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)                              //  屏幕高度
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+#define IS_IPHONE_4S_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)                           // iPhone 4s及更早版本
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)                                   // iPhone 5
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)                                   // iPhone 6
+#define IS_IPHONE_PLUS (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)                                // iPhone 6 plus
+#define IS_IPHONE_X (IS_IPHONE && SCREEN_MAX_LENGTH == 812.0)                                   // iPhone X
+
+#define JsMyFloat(size) (IS_IPHONE_X ? ( (667 / 568) * (size) ) : MyCGFloat(size))              // 按比计算
+#define Js_NavigationBar_Height ((IS_IPHONE_X) ? (88) : (64))                                   // 获取导航栏高度
+#define IOS_VERSION ［[UIDevice currentDevice] systemVersion] floatValue]
+#define SYRealValueW(value) ((value)/414.0f*[UIScreen mainScreen].bounds.size.width)            //  以6p为基准
+#define SYRealValueH(value) ((value)/736.0f*[UIScreen mainScreen].bounds.size.height)
+#define AliPayAppID @"2016093000633563"                                                         // 支付宝APPID
+#define WeixinAppID @"wx4384d445ef257254"                                                       // 微信APPID
+
+#define String_IS_NIL(s) ( s==nil || [s isKindOfClass:[NSNull class]] || s.length <= 0 )        // 字符串是否为nil
+#define Number_IS_VALID(s) ([s isKindOfClass:[NSValue class]])                                  // NSNumber数据是否有效
+#define TEL @"tel://4001668336"                                                                 // 联系电话
+
+#define RED_COLOUR [UIColor js_RGBColorWithRed:241 withGreen:109 withBlue:100]                  // 红色[UIColor js_colorWithHex:0xff0000]
+#define GREEN_COLOUR [UIColor js_colorWithHex:0x48b621]                                         // 绿色
+#define YELLOW_COLOUR [UIColor js_colorWithHex:0xe8ba00]                                        // 红色
+#define WeakSelf(weakFlag) __weak typeof(self) weakFlag = self                                  // 弱引用self
+#define StrongSelf(strongFlag,weakFlag) __strong typeof(weakFlag) strongFlag = weakFlag         // 强引用self
+/*** 数据库相关 ***/
+#define kECGDataCacheTable T_ecg_db_cache                                                       // ECG缓存列表的表名
+
+#define kOCFilePaht [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"time.text"]
+#define KCFilePath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"time.text"] cStringUsingEncoding:NSUTF8StringEncoding]
+
+/*** 常用常量 ***/
+static NSString * const kChangeWindowRootViewControllerNotificationKey  = @"kChangeWindowRootViewControllerNotificationKey";     // 切换window根控制器通知
+static NSString * const kViewControllerWitchSendChangeRootVCKey         = @"kViewControllerWitchSendChangeRootVCKey";
+static NSString * const kCentralManagerDidUpdateState                   = @"kCentralManagerDidUpdateState";                      // 当手机的蓝牙状态及连接状态发生改变时发送的通知Key
+static NSString * const kECGCaptureAnalysisNotificationKey              = @"kECGCaptureAnalysisNotificationKey";                 // ECG捕捉分析
+static NSString * const kECGDeviceLowPowderNotificationKey              = @"kECGDeviceLowPowderNotificationKey";                 // ECG电量低于20%通知
+static NSString * const kECGDeviceDisConnectedKey                       = @"kECGDeviceDisConnectedKey";                          // ECG设备连接断开通知
+static NSString * const kDidReceivedRemoteNotificationKey               = @"kDidReceivedRemoteNotificationKey";                  // 接收到远程推送通知
+static NSString * const kLogOffNotificationKey                          = @"kLogOffNotificationKey";
+static NSString * const kPayResultNotification                          = @"kPayResultNotification";                             // 支付通知 (微信使用,因微信回调没有支付价格,手动传值)
+static NSString * const kReceivedDatabaseCacheStateChangedNotification  = @"kReceivedDatabaseCacheStateChangedNotification";     // 数据库更新通知: 缓存数据状态发生改变时(自动申请报告)
+static NSString * const kECGAppStoreURLString                           =  @"https://itunes.apple.com/cn/app/id1233594788?mt=8"; // ECG AppStore URL String
+static CGFloat const kNavigationBarHeight = 64.f;                                                                                // 导航栏的高度
+
+// @"http://itunes.apple.com/lookup?id=id1233594788"; appstore 检查版本
+
+
+
+
+
+#endif
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
