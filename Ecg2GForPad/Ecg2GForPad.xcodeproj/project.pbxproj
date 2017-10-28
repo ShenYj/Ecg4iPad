@@ -136,7 +136,7 @@
 		68AF3E9A1FA31C4E00C6E455 /* Ecg2GForPad */ = {
 			isa = PBXGroup;
 			children = (
-				68AF3ED21FA31FE400C6E455 /* Classes */,
+				F702E4E11FA4D73F008723AA /* Classes */,
 				68AF3ECD1FA31FE400C6E455 /* SupportingFiles */,
 			);
 			path = Ecg2GForPad;
@@ -174,71 +174,71 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		68AF3ED21FA31FE400C6E455 /* Classes */ = {
+		F702E4E11FA4D73F008723AA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				68AF3ED31FA31FE400C6E455 /* Copy */,
-				68AF3ED71FA31FE400C6E455 /* Main */,
+				F702E4E21FA4D73F008723AA /* Copy */,
+				F702E4E61FA4D73F008723AA /* Main */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		68AF3ED31FA31FE400C6E455 /* Copy */ = {
+		F702E4E21FA4D73F008723AA /* Copy */ = {
 			isa = PBXGroup;
 			children = (
-				68AF3ED41FA31FE400C6E455 /* Controllers */,
-				68AF3ED51FA31FE400C6E455 /* Models */,
-				68AF3ED61FA31FE400C6E455 /* Views */,
+				F702E4E31FA4D73F008723AA /* Controllers */,
+				F702E4E41FA4D73F008723AA /* Models */,
+				F702E4E51FA4D73F008723AA /* Views */,
 			);
 			path = Copy;
 			sourceTree = "<group>";
 		};
-		68AF3ED41FA31FE400C6E455 /* Controllers */ = {
+		F702E4E31FA4D73F008723AA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		68AF3ED51FA31FE400C6E455 /* Models */ = {
+		F702E4E41FA4D73F008723AA /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		68AF3ED61FA31FE400C6E455 /* Views */ = {
+		F702E4E51FA4D73F008723AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		68AF3ED71FA31FE400C6E455 /* Main */ = {
+		F702E4E61FA4D73F008723AA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				68AF3ED81FA31FE400C6E455 /* Controllers */,
-				68AF3ED91FA31FE400C6E455 /* Models */,
-				68AF3EDA1FA31FE400C6E455 /* Views */,
+				F702E4E71FA4D73F008723AA /* Controllers */,
+				F702E4E81FA4D73F008723AA /* Models */,
+				F702E4E91FA4D73F008723AA /* Views */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		68AF3ED81FA31FE400C6E455 /* Controllers */ = {
+		F702E4E71FA4D73F008723AA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		68AF3ED91FA31FE400C6E455 /* Models */ = {
+		F702E4E81FA4D73F008723AA /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		68AF3EDA1FA31FE400C6E455 /* Views */ = {
+		F702E4E91FA4D73F008723AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
