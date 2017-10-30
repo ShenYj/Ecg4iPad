@@ -18,7 +18,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
+    self.window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
+    UIViewController *keyRooVC = [[UIViewController alloc] init];
+    keyRooVC.view.backgroundColor = [UIColor redColor];
+    self.window.rootViewController = keyRooVC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
