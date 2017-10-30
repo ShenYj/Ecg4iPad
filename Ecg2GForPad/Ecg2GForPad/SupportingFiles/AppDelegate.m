@@ -3,11 +3,12 @@
 //  Ecg2GForPad
 //
 //  Created by ecg on 2017/10/27.
-//  Copyright © 2017年 Auko. All rights reserved.
+//  Copyright © 2017年 ShenYj. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import "JSSplitController.h"
+#import "JSTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -28,9 +29,14 @@
 {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
-    JSSplitController *splitViewController = [[JSSplitController alloc] init];
-    splitViewController.view.backgroundColor = [UIColor redColor];
-    self.window.rootViewController = splitViewController;
+    if (isiPhone) {
+        JSTabBarController *tabBarController = [[JSTabBarController alloc] init];
+        self.window.rootViewController = tabBarController;
+    } else {
+        JSSplitController *splitViewController = [[JSSplitController alloc] init];
+        self.window.rootViewController = splitViewController;
+        [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    }
     [self.window makeKeyAndVisible];
     return YES;
 }

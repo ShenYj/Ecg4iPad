@@ -3,7 +3,7 @@
 //  Ecg2GForPad
 //
 //  Created by ecg on 2017/10/27.
-//  Copyright © 2017年 Auko. All rights reserved.
+//  Copyright © 2017年 ShenYj. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

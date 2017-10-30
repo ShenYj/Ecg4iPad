@@ -3,7 +3,7 @@
 //  Ecg2GForPad
 //
 //  Created by ecg on 2017/10/27.
-//  Copyright © 2017年 Auko. All rights reserved.
+//  Copyright © 2017年 ShenYj. All rights reserved.
 //
 
 #ifndef PrefixHeader_pch
@@ -36,14 +36,12 @@
 #import "NSObject+JSObjc.h"
 #import "NSDate+JSCompare.h"
 #import "UIView+JSExtension.h"
-#import "NSString+JSFileSize.h"
 #import "UIColor+JSExtension.h"
 #import "UIImage+JSExtension.h"
 #import "NSString+JSExtension.h"
 #import "JSJsonSerializationTool.h"
 #import "NSString+JSJSONSerialize.h"
 #import "NSString+JSPhoneVerification.h"
-#import "UITabBarController+JSBarHeight.h"
 #import "UINavigationController+JSFullScreenPopGesture.h"
 
 

@@ -16,6 +16,22 @@
 		68AF3EDC1FA32B0300C6E455 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF3EDB1FA32B0300C6E455 /* Launch Screen.storyboard */; };
 		68AF3EDE1FA32DEE00C6E455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3ECF1FA31FE400C6E455 /* AppDelegate.m */; };
 		68AF3EDF1FA32DF200C6E455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3ED11FA31FE400C6E455 /* main.m */; };
+		68E9B8CF1FA7030400C73FFB /* JSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E9B8CE1FA7030400C73FFB /* JSDetailViewController.m */; };
+		68E9B8D01FA70CC100C73FFB /* UIColor+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688239081FA6F9CA0059B96D /* UIColor+JSExtension.m */; };
+		68E9B8D11FA70DB200C73FFB /* CALayer+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238F21FA6F9CA0059B96D /* CALayer+Layout.m */; };
+		68E9B8D21FA70DB500C73FFB /* JSDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238F41FA6F9CA0059B96D /* JSDateFormatter.m */; };
+		68E9B8D31FA70DB900C73FFB /* JSJsonSerializationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238F61FA6F9CA0059B96D /* JSJsonSerializationTool.m */; };
+		68E9B8D51FA70DC000C73FFB /* NSArray+JSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238FA1FA6F9CA0059B96D /* NSArray+JSLog.m */; };
+		68E9B8D61FA70DC400C73FFB /* NSDate+JSCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238FC1FA6F9CA0059B96D /* NSDate+JSCompare.m */; };
+		68E9B8D71FA70DCA00C73FFB /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 688239141FA6F9CA0059B96D /* UIView+Layout.m */; };
+		68E9B8D81FA70DCF00C73FFB /* UIView+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688239121FA6F9CA0059B96D /* UIView+JSExtension.m */; };
+		68E9B8D91FA70DD200C73FFB /* NSObject+JSObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238FE1FA6F9CA0059B96D /* NSObject+JSObjc.m */; };
+		68E9B8DA1FA70DD600C73FFB /* NSString+JSPhoneVerification.m in Sources */ = {isa = PBXBuildFile; fileRef = 688239061FA6F9CA0059B96D /* NSString+JSPhoneVerification.m */; };
+		68E9B8DB1FA70DDA00C73FFB /* UINavigationController+JSFullScreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882390E1FA6F9CA0059B96D /* UINavigationController+JSFullScreenPopGesture.m */; };
+		68E9B8DD1FA70DE300C73FFB /* UIImage+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882390C1FA6F9CA0059B96D /* UIImage+JSExtension.m */; };
+		68E9B8DF1FA70DF100C73FFB /* NSString+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688239001FA6F9CA0059B96D /* NSString+JSExtension.m */; };
+		68E9B8E11FA70DF900C73FFB /* UIFont+JSMicrosoftYaHeiFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 6882390A1FA6F9CA0059B96D /* UIFont+JSMicrosoftYaHeiFont.m */; };
+		68E9B8E21FA70DFE00C73FFB /* NSString+JSJSONSerialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 688239041FA6F9CA0059B96D /* NSString+JSJSONSerialize.m */; };
 		72DEEC0D39818DFDEA8BDDD3 /* libPods-Ecg2GForPadTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC438D74448960F58DF61F6 /* libPods-Ecg2GForPadTests.a */; };
 		8F8F624B4214DE21E457CB1E /* libPods-Ecg2GForPadUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C158C1F7B8B312C4067B554E /* libPods-Ecg2GForPadUITests.a */; };
 /* End PBXBuildFile section */
@@ -53,8 +69,6 @@
 		688238F41FA6F9CA0059B96D /* JSDateFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDateFormatter.m; sourceTree = "<group>"; };
 		688238F51FA6F9CA0059B96D /* JSJsonSerializationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSJsonSerializationTool.h; sourceTree = "<group>"; };
 		688238F61FA6F9CA0059B96D /* JSJsonSerializationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSJsonSerializationTool.m; sourceTree = "<group>"; };
-		688238F71FA6F9CA0059B96D /* JSTextAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTextAlertView.h; sourceTree = "<group>"; };
-		688238F81FA6F9CA0059B96D /* JSTextAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTextAlertView.m; sourceTree = "<group>"; };
 		688238F91FA6F9CA0059B96D /* NSArray+JSLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSLog.h"; sourceTree = "<group>"; };
 		688238FA1FA6F9CA0059B96D /* NSArray+JSLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSLog.m"; sourceTree = "<group>"; };
 		688238FB1FA6F9CA0059B96D /* NSDate+JSCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+JSCompare.h"; sourceTree = "<group>"; };
@@ -63,8 +77,6 @@
 		688238FE1FA6F9CA0059B96D /* NSObject+JSObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSObjc.m"; sourceTree = "<group>"; };
 		688238FF1FA6F9CA0059B96D /* NSString+JSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSExtension.h"; sourceTree = "<group>"; };
 		688239001FA6F9CA0059B96D /* NSString+JSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSExtension.m"; sourceTree = "<group>"; };
-		688239011FA6F9CA0059B96D /* NSString+JSFileSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSFileSize.h"; sourceTree = "<group>"; };
-		688239021FA6F9CA0059B96D /* NSString+JSFileSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSFileSize.m"; sourceTree = "<group>"; };
 		688239031FA6F9CA0059B96D /* NSString+JSJSONSerialize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSJSONSerialize.h"; sourceTree = "<group>"; };
 		688239041FA6F9CA0059B96D /* NSString+JSJSONSerialize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSJSONSerialize.m"; sourceTree = "<group>"; };
 		688239051FA6F9CA0059B96D /* NSString+JSPhoneVerification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSPhoneVerification.h"; sourceTree = "<group>"; };
@@ -77,8 +89,6 @@
 		6882390C1FA6F9CA0059B96D /* UIImage+JSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JSExtension.m"; sourceTree = "<group>"; };
 		6882390D1FA6F9CA0059B96D /* UINavigationController+JSFullScreenPopGesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JSFullScreenPopGesture.h"; sourceTree = "<group>"; };
 		6882390E1FA6F9CA0059B96D /* UINavigationController+JSFullScreenPopGesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JSFullScreenPopGesture.m"; sourceTree = "<group>"; };
-		6882390F1FA6F9CA0059B96D /* UITabBarController+JSBarHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+JSBarHeight.h"; sourceTree = "<group>"; };
-		688239101FA6F9CA0059B96D /* UITabBarController+JSBarHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+JSBarHeight.m"; sourceTree = "<group>"; };
 		688239111FA6F9CA0059B96D /* UIView+JSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JSExtension.h"; sourceTree = "<group>"; };
 		688239121FA6F9CA0059B96D /* UIView+JSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSExtension.m"; sourceTree = "<group>"; };
 		688239131FA6F9CA0059B96D /* UIView+Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
@@ -99,6 +109,8 @@
 		68AF3ED11FA31FE400C6E455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68AF3EDB1FA32B0300C6E455 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		68AF3EE01FA3301500C6E455 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		68E9B8CD1FA7030400C73FFB /* JSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDetailViewController.h; sourceTree = "<group>"; };
+		68E9B8CE1FA7030400C73FFB /* JSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDetailViewController.m; sourceTree = "<group>"; };
 		91EF720D8C1ADA513032A83A /* Pods-Ecg2GForPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecg2GForPadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ecg2GForPadUITests/Pods-Ecg2GForPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BFA44A20FF3749AFD5D9826C /* Pods-Ecg2GForPadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecg2GForPadUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ecg2GForPadUITests/Pods-Ecg2GForPadUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C158C1F7B8B312C4067B554E /* libPods-Ecg2GForPadUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ecg2GForPadUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +184,8 @@
 				688238EB1FA6F8C50059B96D /* JSSplitController.m */,
 				688239161FA6FC3F0059B96D /* JSMasterViewController.h */,
 				688239171FA6FC3F0059B96D /* JSMasterViewController.m */,
+				68E9B8CD1FA7030400C73FFB /* JSDetailViewController.h */,
+				68E9B8CE1FA7030400C73FFB /* JSDetailViewController.m */,
 			);
 			path = Main_iPad;
 			sourceTree = "<group>";
@@ -193,8 +207,6 @@
 				688238F41FA6F9CA0059B96D /* JSDateFormatter.m */,
 				688238F51FA6F9CA0059B96D /* JSJsonSerializationTool.h */,
 				688238F61FA6F9CA0059B96D /* JSJsonSerializationTool.m */,
-				688238F71FA6F9CA0059B96D /* JSTextAlertView.h */,
-				688238F81FA6F9CA0059B96D /* JSTextAlertView.m */,
 				688238F91FA6F9CA0059B96D /* NSArray+JSLog.h */,
 				688238FA1FA6F9CA0059B96D /* NSArray+JSLog.m */,
 				688238FB1FA6F9CA0059B96D /* NSDate+JSCompare.h */,
@@ -203,8 +215,6 @@
 				688238FE1FA6F9CA0059B96D /* NSObject+JSObjc.m */,
 				688238FF1FA6F9CA0059B96D /* NSString+JSExtension.h */,
 				688239001FA6F9CA0059B96D /* NSString+JSExtension.m */,
-				688239011FA6F9CA0059B96D /* NSString+JSFileSize.h */,
-				688239021FA6F9CA0059B96D /* NSString+JSFileSize.m */,
 				688239031FA6F9CA0059B96D /* NSString+JSJSONSerialize.h */,
 				688239041FA6F9CA0059B96D /* NSString+JSJSONSerialize.m */,
 				688239051FA6F9CA0059B96D /* NSString+JSPhoneVerification.h */,
@@ -217,8 +227,6 @@
 				6882390C1FA6F9CA0059B96D /* UIImage+JSExtension.m */,
 				6882390D1FA6F9CA0059B96D /* UINavigationController+JSFullScreenPopGesture.h */,
 				6882390E1FA6F9CA0059B96D /* UINavigationController+JSFullScreenPopGesture.m */,
-				6882390F1FA6F9CA0059B96D /* UITabBarController+JSBarHeight.h */,
-				688239101FA6F9CA0059B96D /* UITabBarController+JSBarHeight.m */,
 				688239111FA6F9CA0059B96D /* UIView+JSExtension.h */,
 				688239121FA6F9CA0059B96D /* UIView+JSExtension.m */,
 				688239131FA6F9CA0059B96D /* UIView+Layout.h */,
@@ -642,8 +650,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68E9B8E21FA70DFE00C73FFB /* NSString+JSJSONSerialize.m in Sources */,
+				68E9B8E11FA70DF900C73FFB /* UIFont+JSMicrosoftYaHeiFont.m in Sources */,
+				68E9B8DF1FA70DF100C73FFB /* NSString+JSExtension.m in Sources */,
+				68E9B8DD1FA70DE300C73FFB /* UIImage+JSExtension.m in Sources */,
+				68E9B8DB1FA70DDA00C73FFB /* UINavigationController+JSFullScreenPopGesture.m in Sources */,
+				68E9B8DA1FA70DD600C73FFB /* NSString+JSPhoneVerification.m in Sources */,
+				68E9B8D91FA70DD200C73FFB /* NSObject+JSObjc.m in Sources */,
+				68E9B8D81FA70DCF00C73FFB /* UIView+JSExtension.m in Sources */,
+				68E9B8D71FA70DCA00C73FFB /* UIView+Layout.m in Sources */,
+				68E9B8D61FA70DC400C73FFB /* NSDate+JSCompare.m in Sources */,
+				68E9B8D51FA70DC000C73FFB /* NSArray+JSLog.m in Sources */,
+				68E9B8D31FA70DB900C73FFB /* JSJsonSerializationTool.m in Sources */,
+				68E9B8D21FA70DB500C73FFB /* JSDateFormatter.m in Sources */,
+				68E9B8D11FA70DB200C73FFB /* CALayer+Layout.m in Sources */,
+				68E9B8D01FA70CC100C73FFB /* UIColor+JSExtension.m in Sources */,
 				688239151FA6FB800059B96D /* JSSplitController.m in Sources */,
 				688238EE1FA6F8E80059B96D /* JSTabBarController.m in Sources */,
+				68E9B8CF1FA7030400C73FFB /* JSDetailViewController.m in Sources */,
 				68AF3EDF1FA32DF200C6E455 /* main.m in Sources */,
 				68AF3EDE1FA32DEE00C6E455 /* AppDelegate.m in Sources */,
 				688239181FA6FC3F0059B96D /* JSMasterViewController.m in Sources */,
