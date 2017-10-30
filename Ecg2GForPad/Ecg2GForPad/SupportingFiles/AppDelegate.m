@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JSSplitController.h"
 
 @interface AppDelegate ()
 
@@ -14,18 +15,25 @@
 
 @implementation AppDelegate
 
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    if (isiPad) {
+        return UIInterfaceOrientationMaskAll;
+    } else {
+        return UIInterfaceOrientationMaskPortrait;
+    }
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
-    UIViewController *keyRooVC = [[UIViewController alloc] init];
-    keyRooVC.view.backgroundColor = [UIColor redColor];
-    self.window.rootViewController = keyRooVC;
+    JSSplitController *splitViewController = [[JSSplitController alloc] init];
+    splitViewController.view.backgroundColor = [UIColor redColor];
+    self.window.rootViewController = splitViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

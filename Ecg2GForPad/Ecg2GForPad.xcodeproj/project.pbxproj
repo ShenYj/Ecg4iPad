@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2D3D2ECA1EF0C1C16D457626 /* libPods-Ecg2GForPad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 343704CFE8F7DC04D38641E3 /* libPods-Ecg2GForPad.a */; };
+		688238EE1FA6F8E80059B96D /* JSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238ED1FA6F8E80059B96D /* JSTabBarController.m */; };
+		688239151FA6FB800059B96D /* JSSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238EB1FA6F8C50059B96D /* JSSplitController.m */; };
+		688239181FA6FC3F0059B96D /* JSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688239171FA6FC3F0059B96D /* JSMasterViewController.m */; };
 		68AF3EB51FA31C4E00C6E455 /* Ecg2GForPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3EB41FA31C4E00C6E455 /* Ecg2GForPadTests.m */; };
 		68AF3EC01FA31C4F00C6E455 /* Ecg2GForPadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3EBF1FA31C4F00C6E455 /* Ecg2GForPadUITests.m */; };
 		68AF3EDC1FA32B0300C6E455 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF3EDB1FA32B0300C6E455 /* Launch Screen.storyboard */; };
@@ -40,6 +43,48 @@
 		454EEA78072255482F65ABD4 /* Pods-Ecg2GForPadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecg2GForPadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ecg2GForPadTests/Pods-Ecg2GForPadTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C78EF4B8835CC0D47F6D725 /* Pods-Ecg2GForPad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecg2GForPad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ecg2GForPad/Pods-Ecg2GForPad.release.xcconfig"; sourceTree = "<group>"; };
 		51B4172C42F22114A5C8FB2D /* Pods-Ecg2GForPad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecg2GForPad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ecg2GForPad/Pods-Ecg2GForPad.debug.xcconfig"; sourceTree = "<group>"; };
+		688238EA1FA6F8C50059B96D /* JSSplitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSSplitController.h; sourceTree = "<group>"; };
+		688238EB1FA6F8C50059B96D /* JSSplitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSSplitController.m; sourceTree = "<group>"; };
+		688238EC1FA6F8E80059B96D /* JSTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTabBarController.h; sourceTree = "<group>"; };
+		688238ED1FA6F8E80059B96D /* JSTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTabBarController.m; sourceTree = "<group>"; };
+		688238F11FA6F9CA0059B96D /* CALayer+Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+Layout.h"; sourceTree = "<group>"; };
+		688238F21FA6F9CA0059B96D /* CALayer+Layout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Layout.m"; sourceTree = "<group>"; };
+		688238F31FA6F9CA0059B96D /* JSDateFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDateFormatter.h; sourceTree = "<group>"; };
+		688238F41FA6F9CA0059B96D /* JSDateFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDateFormatter.m; sourceTree = "<group>"; };
+		688238F51FA6F9CA0059B96D /* JSJsonSerializationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSJsonSerializationTool.h; sourceTree = "<group>"; };
+		688238F61FA6F9CA0059B96D /* JSJsonSerializationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSJsonSerializationTool.m; sourceTree = "<group>"; };
+		688238F71FA6F9CA0059B96D /* JSTextAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTextAlertView.h; sourceTree = "<group>"; };
+		688238F81FA6F9CA0059B96D /* JSTextAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTextAlertView.m; sourceTree = "<group>"; };
+		688238F91FA6F9CA0059B96D /* NSArray+JSLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSLog.h"; sourceTree = "<group>"; };
+		688238FA1FA6F9CA0059B96D /* NSArray+JSLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSLog.m"; sourceTree = "<group>"; };
+		688238FB1FA6F9CA0059B96D /* NSDate+JSCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+JSCompare.h"; sourceTree = "<group>"; };
+		688238FC1FA6F9CA0059B96D /* NSDate+JSCompare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JSCompare.m"; sourceTree = "<group>"; };
+		688238FD1FA6F9CA0059B96D /* NSObject+JSObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSObjc.h"; sourceTree = "<group>"; };
+		688238FE1FA6F9CA0059B96D /* NSObject+JSObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSObjc.m"; sourceTree = "<group>"; };
+		688238FF1FA6F9CA0059B96D /* NSString+JSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSExtension.h"; sourceTree = "<group>"; };
+		688239001FA6F9CA0059B96D /* NSString+JSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSExtension.m"; sourceTree = "<group>"; };
+		688239011FA6F9CA0059B96D /* NSString+JSFileSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSFileSize.h"; sourceTree = "<group>"; };
+		688239021FA6F9CA0059B96D /* NSString+JSFileSize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSFileSize.m"; sourceTree = "<group>"; };
+		688239031FA6F9CA0059B96D /* NSString+JSJSONSerialize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSJSONSerialize.h"; sourceTree = "<group>"; };
+		688239041FA6F9CA0059B96D /* NSString+JSJSONSerialize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSJSONSerialize.m"; sourceTree = "<group>"; };
+		688239051FA6F9CA0059B96D /* NSString+JSPhoneVerification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JSPhoneVerification.h"; sourceTree = "<group>"; };
+		688239061FA6F9CA0059B96D /* NSString+JSPhoneVerification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSPhoneVerification.m"; sourceTree = "<group>"; };
+		688239071FA6F9CA0059B96D /* UIColor+JSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JSExtension.h"; sourceTree = "<group>"; };
+		688239081FA6F9CA0059B96D /* UIColor+JSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JSExtension.m"; sourceTree = "<group>"; };
+		688239091FA6F9CA0059B96D /* UIFont+JSMicrosoftYaHeiFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+JSMicrosoftYaHeiFont.h"; sourceTree = "<group>"; };
+		6882390A1FA6F9CA0059B96D /* UIFont+JSMicrosoftYaHeiFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JSMicrosoftYaHeiFont.m"; sourceTree = "<group>"; };
+		6882390B1FA6F9CA0059B96D /* UIImage+JSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JSExtension.h"; sourceTree = "<group>"; };
+		6882390C1FA6F9CA0059B96D /* UIImage+JSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JSExtension.m"; sourceTree = "<group>"; };
+		6882390D1FA6F9CA0059B96D /* UINavigationController+JSFullScreenPopGesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JSFullScreenPopGesture.h"; sourceTree = "<group>"; };
+		6882390E1FA6F9CA0059B96D /* UINavigationController+JSFullScreenPopGesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JSFullScreenPopGesture.m"; sourceTree = "<group>"; };
+		6882390F1FA6F9CA0059B96D /* UITabBarController+JSBarHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+JSBarHeight.h"; sourceTree = "<group>"; };
+		688239101FA6F9CA0059B96D /* UITabBarController+JSBarHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+JSBarHeight.m"; sourceTree = "<group>"; };
+		688239111FA6F9CA0059B96D /* UIView+JSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JSExtension.h"; sourceTree = "<group>"; };
+		688239121FA6F9CA0059B96D /* UIView+JSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSExtension.m"; sourceTree = "<group>"; };
+		688239131FA6F9CA0059B96D /* UIView+Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		688239141FA6F9CA0059B96D /* UIView+Layout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		688239161FA6FC3F0059B96D /* JSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMasterViewController.h; sourceTree = "<group>"; };
+		688239171FA6FC3F0059B96D /* JSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMasterViewController.m; sourceTree = "<group>"; };
 		68AF3E981FA31C4E00C6E455 /* Ecg2GForPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecg2GForPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AF3EA91FA31C4E00C6E455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68AF3EB01FA31C4E00C6E455 /* Ecg2GForPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ecg2GForPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +156,77 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		688238E81FA6F8C50059B96D /* Main_iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				688238EC1FA6F8E80059B96D /* JSTabBarController.h */,
+				688238ED1FA6F8E80059B96D /* JSTabBarController.m */,
+			);
+			path = Main_iPhone;
+			sourceTree = "<group>";
+		};
+		688238E91FA6F8C50059B96D /* Main_iPad */ = {
+			isa = PBXGroup;
+			children = (
+				688238EA1FA6F8C50059B96D /* JSSplitController.h */,
+				688238EB1FA6F8C50059B96D /* JSSplitController.m */,
+				688239161FA6FC3F0059B96D /* JSMasterViewController.h */,
+				688239171FA6FC3F0059B96D /* JSMasterViewController.m */,
+			);
+			path = Main_iPad;
+			sourceTree = "<group>";
+		};
+		688238EF1FA6F9A40059B96D /* CommonTools */ = {
+			isa = PBXGroup;
+			children = (
+				688238F01FA6F9CA0059B96D /* Extension */,
+			);
+			path = CommonTools;
+			sourceTree = "<group>";
+		};
+		688238F01FA6F9CA0059B96D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				688238F11FA6F9CA0059B96D /* CALayer+Layout.h */,
+				688238F21FA6F9CA0059B96D /* CALayer+Layout.m */,
+				688238F31FA6F9CA0059B96D /* JSDateFormatter.h */,
+				688238F41FA6F9CA0059B96D /* JSDateFormatter.m */,
+				688238F51FA6F9CA0059B96D /* JSJsonSerializationTool.h */,
+				688238F61FA6F9CA0059B96D /* JSJsonSerializationTool.m */,
+				688238F71FA6F9CA0059B96D /* JSTextAlertView.h */,
+				688238F81FA6F9CA0059B96D /* JSTextAlertView.m */,
+				688238F91FA6F9CA0059B96D /* NSArray+JSLog.h */,
+				688238FA1FA6F9CA0059B96D /* NSArray+JSLog.m */,
+				688238FB1FA6F9CA0059B96D /* NSDate+JSCompare.h */,
+				688238FC1FA6F9CA0059B96D /* NSDate+JSCompare.m */,
+				688238FD1FA6F9CA0059B96D /* NSObject+JSObjc.h */,
+				688238FE1FA6F9CA0059B96D /* NSObject+JSObjc.m */,
+				688238FF1FA6F9CA0059B96D /* NSString+JSExtension.h */,
+				688239001FA6F9CA0059B96D /* NSString+JSExtension.m */,
+				688239011FA6F9CA0059B96D /* NSString+JSFileSize.h */,
+				688239021FA6F9CA0059B96D /* NSString+JSFileSize.m */,
+				688239031FA6F9CA0059B96D /* NSString+JSJSONSerialize.h */,
+				688239041FA6F9CA0059B96D /* NSString+JSJSONSerialize.m */,
+				688239051FA6F9CA0059B96D /* NSString+JSPhoneVerification.h */,
+				688239061FA6F9CA0059B96D /* NSString+JSPhoneVerification.m */,
+				688239071FA6F9CA0059B96D /* UIColor+JSExtension.h */,
+				688239081FA6F9CA0059B96D /* UIColor+JSExtension.m */,
+				688239091FA6F9CA0059B96D /* UIFont+JSMicrosoftYaHeiFont.h */,
+				6882390A1FA6F9CA0059B96D /* UIFont+JSMicrosoftYaHeiFont.m */,
+				6882390B1FA6F9CA0059B96D /* UIImage+JSExtension.h */,
+				6882390C1FA6F9CA0059B96D /* UIImage+JSExtension.m */,
+				6882390D1FA6F9CA0059B96D /* UINavigationController+JSFullScreenPopGesture.h */,
+				6882390E1FA6F9CA0059B96D /* UINavigationController+JSFullScreenPopGesture.m */,
+				6882390F1FA6F9CA0059B96D /* UITabBarController+JSBarHeight.h */,
+				688239101FA6F9CA0059B96D /* UITabBarController+JSBarHeight.m */,
+				688239111FA6F9CA0059B96D /* UIView+JSExtension.h */,
+				688239121FA6F9CA0059B96D /* UIView+JSExtension.m */,
+				688239131FA6F9CA0059B96D /* UIView+Layout.h */,
+				688239141FA6F9CA0059B96D /* UIView+Layout.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		68AF3E8F1FA31C4E00C6E455 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +252,7 @@
 		68AF3E9A1FA31C4E00C6E455 /* Ecg2GForPad */ = {
 			isa = PBXGroup;
 			children = (
+				688238EF1FA6F9A40059B96D /* CommonTools */,
 				F702E4E11FA4D73F008723AA /* Classes */,
 				68AF3ECD1FA31FE400C6E455 /* SupportingFiles */,
 			);
@@ -227,6 +344,8 @@
 		F702E4E71FA4D73F008723AA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				688238E91FA6F8C50059B96D /* Main_iPad */,
+				688238E81FA6F8C50059B96D /* Main_iPhone */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -523,8 +642,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				688239151FA6FB800059B96D /* JSSplitController.m in Sources */,
+				688238EE1FA6F8E80059B96D /* JSTabBarController.m in Sources */,
 				68AF3EDF1FA32DF200C6E455 /* main.m in Sources */,
 				68AF3EDE1FA32DEE00C6E455 /* AppDelegate.m in Sources */,
+				688239181FA6FC3F0059B96D /* JSMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

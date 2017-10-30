@@ -28,9 +28,31 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
+/*** Extension ***/
+#import "NSArray+JSLog.h"
+#import "UIView+Layout.h"
+#import "CALayer+Layout.h"
+#import "JSDateFormatter.h"
+#import "NSObject+JSObjc.h"
+#import "NSDate+JSCompare.h"
+#import "UIView+JSExtension.h"
+#import "NSString+JSFileSize.h"
+#import "UIColor+JSExtension.h"
+#import "UIImage+JSExtension.h"
+#import "NSString+JSExtension.h"
+#import "JSJsonSerializationTool.h"
+#import "NSString+JSJSONSerialize.h"
+#import "NSString+JSPhoneVerification.h"
+#import "UITabBarController+JSBarHeight.h"
+#import "UINavigationController+JSFullScreenPopGesture.h"
+
+
+
 
 
 #pragma mark - 常用宏
+#define isiPad ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+#define isiPhone ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone)
 #define DB_BasePath NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject  // 数据库的basePath
 #define iOS8 (([UIDevice currentDevice].systemVersion.floatValue) >= (8.0))                     //  iOS 8
 #define iOS9 (([UIDevice currentDevice].systemVersion.floatValue) >= (9.0))                     //  iOS 9
