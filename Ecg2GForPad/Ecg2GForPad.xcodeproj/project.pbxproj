@@ -309,6 +309,61 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		68D05CF31FA87C580025BCF8 /* RealECG(实时心电) */ = {
+			isa = PBXGroup;
+			children = (
+				68D05CF41FA87C580025BCF8 /* Controllers */,
+				68D05CF51FA87C580025BCF8 /* Models */,
+				68D05CF61FA87C580025BCF8 /* Views */,
+			);
+			path = "RealECG(实时心电)";
+			sourceTree = "<group>";
+		};
+		68D05CF41FA87C580025BCF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68D05CF81FA87CA60025BCF8 /* RealECG_iPad */,
+				68D05CF91FA87CA60025BCF8 /* RealECG_iPhone */,
+				68D05CF71FA87CA60025BCF8 /* RealECG_universal */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		68D05CF51FA87C580025BCF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68D05CF61FA87C580025BCF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		68D05CF71FA87CA60025BCF8 /* RealECG_universal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RealECG_universal;
+			sourceTree = "<group>";
+		};
+		68D05CF81FA87CA60025BCF8 /* RealECG_iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RealECG_iPad;
+			sourceTree = "<group>";
+		};
+		68D05CF91FA87CA60025BCF8 /* RealECG_iPhone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RealECG_iPhone;
+			sourceTree = "<group>";
+		};
 		68FCA8561FA809EC00AC22A4 /* Main_universal */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,8 +374,9 @@
 		F702E4E11FA4D73F008723AA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F702E4E21FA4D73F008723AA /* Copy */,
 				F702E4E61FA4D73F008723AA /* Main */,
+				68D05CF31FA87C580025BCF8 /* RealECG(实时心电) */,
+				F702E4E21FA4D73F008723AA /* Copy */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
