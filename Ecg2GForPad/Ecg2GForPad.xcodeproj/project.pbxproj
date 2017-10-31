@@ -18,6 +18,7 @@
 		68AF3EDF1FA32DF200C6E455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3ED11FA31FE400C6E455 /* main.m */; };
 		68D05CCF1FA873FB0025BCF8 /* JSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D05CCD1FA873FB0025BCF8 /* JSBaseNavigationController.m */; };
 		68D05CD21FA874C80025BCF8 /* JSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D05CD11FA874C80025BCF8 /* JSBaseViewController.m */; };
+		68D05CFC1FA87DB80025BCF8 /* JSRealECGPhoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D05CFB1FA87DB80025BCF8 /* JSRealECGPhoneController.m */; };
 		68E9B8CF1FA7030400C73FFB /* JSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E9B8CE1FA7030400C73FFB /* JSDetailViewController.m */; };
 		68E9B8D01FA70CC100C73FFB /* UIColor+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688239081FA6F9CA0059B96D /* UIColor+JSExtension.m */; };
 		68E9B8D11FA70DB200C73FFB /* CALayer+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238F21FA6F9CA0059B96D /* CALayer+Layout.m */; };
@@ -115,6 +116,10 @@
 		68D05CCE1FA873FB0025BCF8 /* JSBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseNavigationController.h; sourceTree = "<group>"; };
 		68D05CD01FA874C80025BCF8 /* JSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBaseViewController.h; sourceTree = "<group>"; };
 		68D05CD11FA874C80025BCF8 /* JSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBaseViewController.m; sourceTree = "<group>"; };
+		68D05CFA1FA87DB80025BCF8 /* JSRealECGPhoneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSRealECGPhoneController.h; sourceTree = "<group>"; };
+		68D05CFB1FA87DB80025BCF8 /* JSRealECGPhoneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSRealECGPhoneController.m; sourceTree = "<group>"; };
+		68D05CFE1FA87FE60025BCF8 /* JSBaseNavBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBaseNavBarButtonItem.h; sourceTree = "<group>"; };
+		68D05CFF1FA87FE60025BCF8 /* JSBaseNavBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBaseNavBarButtonItem.m; sourceTree = "<group>"; };
 		68E9B8CD1FA7030400C73FFB /* JSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDetailViewController.h; sourceTree = "<group>"; };
 		68E9B8CE1FA7030400C73FFB /* JSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDetailViewController.m; sourceTree = "<group>"; };
 		91EF720D8C1ADA513032A83A /* Pods-Ecg2GForPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecg2GForPadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ecg2GForPadUITests/Pods-Ecg2GForPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -360,8 +365,19 @@
 		68D05CF91FA87CA60025BCF8 /* RealECG_iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				68D05CFA1FA87DB80025BCF8 /* JSRealECGPhoneController.h */,
+				68D05CFB1FA87DB80025BCF8 /* JSRealECGPhoneController.m */,
 			);
 			path = RealECG_iPhone;
+			sourceTree = "<group>";
+		};
+		68D05CFD1FA87FE60025BCF8 /* Views_iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				68D05CFE1FA87FE60025BCF8 /* JSBaseNavBarButtonItem.h */,
+				68D05CFF1FA87FE60025BCF8 /* JSBaseNavBarButtonItem.m */,
+			);
+			path = Views_iPhone;
 			sourceTree = "<group>";
 		};
 		68FCA8561FA809EC00AC22A4 /* Main_universal */ = {
@@ -442,6 +458,7 @@
 		F702E4E91FA4D73F008723AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				68D05CFD1FA87FE60025BCF8 /* Views_iPhone */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -743,6 +760,7 @@
 				688238EE1FA6F8E80059B96D /* JSTabBarController.m in Sources */,
 				68D05CD21FA874C80025BCF8 /* JSBaseViewController.m in Sources */,
 				68E9B8CF1FA7030400C73FFB /* JSDetailViewController.m in Sources */,
+				68D05CFC1FA87DB80025BCF8 /* JSRealECGPhoneController.m in Sources */,
 				68AF3EDF1FA32DF200C6E455 /* main.m in Sources */,
 				68AF3EDE1FA32DEE00C6E455 /* AppDelegate.m in Sources */,
 				688239181FA6FC3F0059B96D /* JSMasterViewController.m in Sources */,

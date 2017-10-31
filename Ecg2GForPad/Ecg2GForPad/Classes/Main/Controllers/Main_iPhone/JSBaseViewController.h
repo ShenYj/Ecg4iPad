@@ -2,12 +2,18 @@
 //  JSBaseViewController.h
 //  Ecg2GForPad
 //
-//  Created by ecg on 2017/10/31.
-//  Copyright © 2017年 Auko. All rights reserved.
+//  Created by ShenYj on 2017/10/31.
+//  Copyright © 2017年 ShenYj. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "JSBaseNavBarButtonItem.h"
 
 @interface JSBaseViewController : UIViewController
+
+/** 自定义导航条 */
+@property (nonatomic,strong) UINavigationBar  *js_NavigationBar;
+/** 自定义导航条Item */
+@property (nonatomic,strong) UINavigationItem *js_navigationItem;
 
 @end
