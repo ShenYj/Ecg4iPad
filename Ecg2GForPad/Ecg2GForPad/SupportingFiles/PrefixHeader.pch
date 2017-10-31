@@ -27,6 +27,8 @@
 #import "MJRefresh.h"
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "JSBaseViewController.h"
+#import "JSBaseNavigationController.h"
 #import <SystemConfiguration/SystemConfiguration.h>
 /*** Extension ***/
 #import "NSArray+JSLog.h"

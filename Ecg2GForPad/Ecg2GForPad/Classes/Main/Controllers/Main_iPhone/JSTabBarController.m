@@ -18,16 +18,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     self.view.backgroundColor = [UIColor js_randomColor];
-    [self addChildViewControllers:[UIViewController new] withImageName:nil withTitle:@"1"];
-    [self addChildViewControllers:[UIViewController new] withImageName:nil withTitle:@"2"];
-    [self addChildViewControllers:[UIViewController new] withImageName:nil withTitle:@"3"];
-    [self addChildViewControllers:[UIViewController new] withImageName:nil withTitle:@"4"];
+    [self addChildViewControllers:[JSBaseViewController new] withImageName:nil withTitle:@"1"];
+    [self addChildViewControllers:[JSBaseViewController new] withImageName:nil withTitle:@"2"];
+    [self addChildViewControllers:[JSBaseViewController new] withImageName:nil withTitle:@"3"];
+    [self addChildViewControllers:[JSBaseViewController new] withImageName:nil withTitle:@"4"];
 }
 
 // 添加子控制器&设置子控制器标题和图片
-- (void)addChildViewControllers:(UIViewController *)viewController withImageName:(NSString *)imageName withTitle:(NSString *)title
+- (void)addChildViewControllers:(JSBaseViewController *)viewController withImageName:(NSString *)imageName withTitle:(NSString *)title
 {
     UIImage *image = [UIImage imageNamed:imageName];
     UIImage *selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"%@_click",imageName]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

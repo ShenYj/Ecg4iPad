@@ -16,6 +16,8 @@
 		68AF3EDC1FA32B0300C6E455 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF3EDB1FA32B0300C6E455 /* Launch Screen.storyboard */; };
 		68AF3EDE1FA32DEE00C6E455 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3ECF1FA31FE400C6E455 /* AppDelegate.m */; };
 		68AF3EDF1FA32DF200C6E455 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3ED11FA31FE400C6E455 /* main.m */; };
+		68D05CCF1FA873FB0025BCF8 /* JSBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D05CCD1FA873FB0025BCF8 /* JSBaseNavigationController.m */; };
+		68D05CD21FA874C80025BCF8 /* JSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D05CD11FA874C80025BCF8 /* JSBaseViewController.m */; };
 		68E9B8CF1FA7030400C73FFB /* JSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E9B8CE1FA7030400C73FFB /* JSDetailViewController.m */; };
 		68E9B8D01FA70CC100C73FFB /* UIColor+JSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 688239081FA6F9CA0059B96D /* UIColor+JSExtension.m */; };
 		68E9B8D11FA70DB200C73FFB /* CALayer+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238F21FA6F9CA0059B96D /* CALayer+Layout.m */; };
@@ -109,6 +111,10 @@
 		68AF3ED11FA31FE400C6E455 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		68AF3EDB1FA32B0300C6E455 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		68AF3EE01FA3301500C6E455 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		68D05CCD1FA873FB0025BCF8 /* JSBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSBaseNavigationController.m; sourceTree = "<group>"; };
+		68D05CCE1FA873FB0025BCF8 /* JSBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBaseNavigationController.h; sourceTree = "<group>"; };
+		68D05CD01FA874C80025BCF8 /* JSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSBaseViewController.h; sourceTree = "<group>"; };
+		68D05CD11FA874C80025BCF8 /* JSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBaseViewController.m; sourceTree = "<group>"; };
 		68E9B8CD1FA7030400C73FFB /* JSDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSDetailViewController.h; sourceTree = "<group>"; };
 		68E9B8CE1FA7030400C73FFB /* JSDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSDetailViewController.m; sourceTree = "<group>"; };
 		91EF720D8C1ADA513032A83A /* Pods-Ecg2GForPadUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ecg2GForPadUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ecg2GForPadUITests/Pods-Ecg2GForPadUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,8 +177,12 @@
 		688238E81FA6F8C50059B96D /* Main_iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				68D05CCE1FA873FB0025BCF8 /* JSBaseNavigationController.h */,
+				68D05CCD1FA873FB0025BCF8 /* JSBaseNavigationController.m */,
 				688238EC1FA6F8E80059B96D /* JSTabBarController.h */,
 				688238ED1FA6F8E80059B96D /* JSTabBarController.m */,
+				68D05CD01FA874C80025BCF8 /* JSBaseViewController.h */,
+				68D05CD11FA874C80025BCF8 /* JSBaseViewController.m */,
 			);
 			path = Main_iPhone;
 			sourceTree = "<group>";
@@ -675,10 +685,12 @@
 				68E9B8D01FA70CC100C73FFB /* UIColor+JSExtension.m in Sources */,
 				688239151FA6FB800059B96D /* JSSplitController.m in Sources */,
 				688238EE1FA6F8E80059B96D /* JSTabBarController.m in Sources */,
+				68D05CD21FA874C80025BCF8 /* JSBaseViewController.m in Sources */,
 				68E9B8CF1FA7030400C73FFB /* JSDetailViewController.m in Sources */,
 				68AF3EDF1FA32DF200C6E455 /* main.m in Sources */,
 				68AF3EDE1FA32DEE00C6E455 /* AppDelegate.m in Sources */,
 				688239181FA6FC3F0059B96D /* JSMasterViewController.m in Sources */,
+				68D05CCF1FA873FB0025BCF8 /* JSBaseNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
