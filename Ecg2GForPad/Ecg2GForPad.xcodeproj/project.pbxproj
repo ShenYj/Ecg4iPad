@@ -299,6 +299,13 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		68FCA8561FA809EC00AC22A4 /* Main_universal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main_universal;
+			sourceTree = "<group>";
+		};
 		F702E4E11FA4D73F008723AA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +359,7 @@
 		F702E4E71FA4D73F008723AA /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				68FCA8561FA809EC00AC22A4 /* Main_universal */,
 				688238E91FA6F8C50059B96D /* Main_iPad */,
 				688238E81FA6F8C50059B96D /* Main_iPhone */,
 			);

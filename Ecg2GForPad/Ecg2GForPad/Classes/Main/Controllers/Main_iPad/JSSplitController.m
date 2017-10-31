@@ -54,7 +54,7 @@
      UISplitViewControllerDisplayModeAllVisible,        始终显示     横竖屏主视图都会显示,不可以通过手势来控制主视图的显隐
      UISplitViewControllerDisplayModePrimaryOverlay,    主视图悬停   横竖屏主视图都会显示,可以通过手势来控制主视图的显隐
      */
-    self.preferredDisplayMode = UISplitViewControllerDisplayModeAutomatic;
+    self.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
     // 监听设备朝向变化通知
     [[NSNotificationCenter defaultCenter] addObserver: self
                                              selector: @selector(orientationDidChangeNotification)
