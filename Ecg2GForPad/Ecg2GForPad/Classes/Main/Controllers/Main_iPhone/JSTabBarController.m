@@ -29,15 +29,16 @@
 // 添加子控制器&设置子控制器标题和图片
 - (void)addChildViewControllers:(JSBaseViewController *)viewController withImageName:(NSString *)imageName withTitle:(NSString *)title
 {
+    JSBaseNavigationController *navigationVC = [[JSBaseNavigationController alloc] initWithRootViewController:viewController];
     UIImage *image = [UIImage imageNamed:imageName];
     UIImage *selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"%@_click",imageName]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    viewController.tabBarItem.title = title;
-    viewController.tabBarItem.image = image;
-    viewController.tabBarItem.selectedImage = selectedImage;
+    navigationVC.tabBarItem.title = title;
+    navigationVC.tabBarItem.image = image;
+    navigationVC.tabBarItem.selectedImage = selectedImage;
     // 设置tabbarItem字体颜色
-    [viewController.tabBarItem setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor js_RGBColorWithRed:255 withGreen:205 withBlue:25]}
-                                             forState: UIControlStateSelected];
-    [self addChildViewController:viewController];
+    [navigationVC.tabBarItem setTitleTextAttributes: @{NSForegroundColorAttributeName: [UIColor js_RGBColorWithRed:255 withGreen:205 withBlue:25]}
+                                           forState: UIControlStateSelected];
+    [self addChildViewController:navigationVC];
 }
 
 - (void)didReceiveMemoryWarning

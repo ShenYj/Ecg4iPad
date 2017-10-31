@@ -15,5 +15,9 @@
 @property (nonatomic,strong) UINavigationBar  *js_NavigationBar;
 /** 自定义导航条Item */
 @property (nonatomic,strong) UINavigationItem *js_navigationItem;
+/*** 顶部的状态栏 ***/
+@property (nonatomic,strong) UIView           *js_statusBar;
+/*** contentView ***/
+@property (nonatomic,strong) UIView           *js_contentView;
 
 @end

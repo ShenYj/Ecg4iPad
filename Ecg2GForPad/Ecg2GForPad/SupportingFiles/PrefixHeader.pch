@@ -107,8 +107,10 @@ static NSString * const kDidReceivedRemoteNotificationKey               = @"kDid
 static NSString * const kLogOffNotificationKey                          = @"kLogOffNotificationKey";
 static NSString * const kPayResultNotification                          = @"kPayResultNotification";                             // 支付通知 (微信使用,因微信回调没有支付价格,手动传值)
 static NSString * const kReceivedDatabaseCacheStateChangedNotification  = @"kReceivedDatabaseCacheStateChangedNotification";     // 数据库更新通知: 缓存数据状态发生改变时(自动申请报告)
-static NSString * const kECGAppStoreURLString                           =  @"https://itunes.apple.com/cn/app/id1233594788?mt=8"; // ECG AppStore URL String
+static NSString * const kECGAppStoreURLString                           = @"https://itunes.apple.com/cn/app/id1233594788?mt=8";  // ECG AppStore URL String
 static CGFloat const kNavigationBarBaseHeight = 64.f;                                                                            // 导航栏的高度
+static CGFloat const kStatusBarBaseHeight = 20.f;                                                                                // 状态栏默认高度
+static CGFloat const kStatusBarExtensionHeight = 42.f;                                                                           // iPhone X 下状态栏高度
 
 // @"http://itunes.apple.com/lookup?id=id1233594788"; appstore 检查版本
 
