@@ -17,7 +17,7 @@
 
 // 记录push标志
 @property (nonatomic, assign, getter=isPushing) BOOL pushing;
-@property (nonatomic,strong) UIButton                *backButton;
+//@property (nonatomic,strong) UIButton                *backButton;
 
 @end
 
@@ -30,11 +30,11 @@
     self.navigationBar.hidden = YES;
     
     self.delegate = self;
-    [self.navigationBar setTitleTextAttributes:@{
-                                                 NSFontAttributeName: [UIFont systemFontOfSize:18],
-                                                 NSForegroundColorAttributeName: [UIColor js_colorWithHex:0x333333],
-                                                 }];
-    self.navigationBar.barTintColor = [UIColor whiteColor];
+//    [self.navigationBar setTitleTextAttributes:@{
+//                                                 NSFontAttributeName: [UIFont systemFontOfSize:18],
+//                                                 NSForegroundColorAttributeName: [UIColor js_colorWithHex:0x333333],
+//                                                 }];
+//    self.navigationBar.barTintColor = [UIColor whiteColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -56,25 +56,25 @@
         // 设置全局隐藏底部TabBar
         viewController.hidesBottomBarWhenPushed = YES;
         // 设置返回按钮
-        if ([viewController isKindOfClass:[JSBaseViewController class]]) {
-            JSBaseViewController *nextVC = (JSBaseViewController *)viewController;
-            NSString *title = @"  ";    // 返回
-            if (self.childViewControllers.count == 1) {
-                JSBaseViewController *parentVC = self.childViewControllers.firstObject;
-                title = parentVC.navigationItem.title;
-            }
-            nextVC.navigationItem.leftBarButtonItem = nil;
-            [UIBarButtonItem appearance].tintColor = [UIColor grayColor];
-            nextVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backButton];
-        }
+//        if ([viewController isKindOfClass:[JSBaseViewController class]]) {
+//            JSBaseViewController *nextVC = (JSBaseViewController *)viewController;
+//            NSString *title = @"  ";    // 返回
+//            if (self.childViewControllers.count == 1) {
+//                JSBaseViewController *parentVC = self.childViewControllers.firstObject;
+//                title = parentVC.navigationItem.title;
+//            }
+//            nextVC.navigationItem.leftBarButtonItem = nil;
+//            [UIBarButtonItem appearance].tintColor = [UIColor grayColor];
+//            nextVC.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backButton];
+//        }
     }
     [super pushViewController:viewController animated:animated];
 }
 
-- (void)goBackToParentController:(UIBarButtonItem *)sender
-{
-    [self popViewControllerAnimated:YES];
-}
+//- (void)goBackToParentController:(UIBarButtonItem *)sender
+//{
+//    [self popViewControllerAnimated:YES];
+//}
 
 /*** 隐藏导航栏底边的线 ***/
 - (void)hideNavigationBarBottomLine
@@ -163,20 +163,20 @@
     self.pushing = NO;
 }
 
-#pragma mark - lazy
-- (UIButton *)backButton {
-    if (!_backButton) {
-        _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        _backButton.frame = CGRectMake(0, 0, SYRealValueW(60), 25);
-        _backButton.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 20);
-        [_backButton setImage:[UIImage imageNamed:@"back_Img"] forState:UIControlStateNormal];
-        [_backButton setTitle:@"    " forState:UIControlStateNormal];
-        [_backButton addTarget: self
-                        action: @selector(goBackToParentController:)
-              forControlEvents: UIControlEventTouchUpInside];
-    }
-    return _backButton;
-}
+//#pragma mark - lazy
+//- (UIButton *)backButton {
+//    if (!_backButton) {
+//        _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//        _backButton.frame = CGRectMake(0, 0, SYRealValueW(60), 25);
+//        _backButton.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 20);
+//        [_backButton setImage:[UIImage imageNamed:@"back_Img"] forState:UIControlStateNormal];
+//        [_backButton setTitle:@"    " forState:UIControlStateNormal];
+//        [_backButton addTarget: self
+//                        action: @selector(goBackToParentController:)
+//              forControlEvents: UIControlEventTouchUpInside];
+//    }
+//    return _backButton;
+//}
 
 
 @end

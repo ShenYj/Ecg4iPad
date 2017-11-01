@@ -19,5 +19,7 @@
 @property (nonatomic,strong) UINavigationItem *js_navigationItem;
 /*** contentView ***/
 @property (nonatomic,strong) UIView           *js_contentView;
+/*** 返回按钮 ***/
+@property (nonatomic,strong) UIButton         *backButton;
 
 @end

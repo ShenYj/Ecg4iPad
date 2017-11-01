@@ -8,18 +8,26 @@
 
 #import "JSBaseViewController.h"
 
-
 /*** iPhone X 适配: 左右下边间距 ***/
 static CGFloat const kiPhoneXViewMargin_L = 0;
 static CGFloat const kiPhoneXViewMargin_R = 0;
 static CGFloat const kiPhoneXViewMargin_B = 0;
-
+/*** 背景色 ***/
+#define BackgroundColour [UIColor colorWithRed:245 / 255.0 green:245 / 255.0 blue:245 / 255.0 alpha:1.0]
 
 @interface JSBaseViewController ()
 
 @end
 
 @implementation JSBaseViewController
+
+
+#pragma mark - target
+
+- (void)goBackToParentController:(UIBarButtonItem *)sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 - (void)viewDidLoad
 {
@@ -49,7 +57,7 @@ static CGFloat const kiPhoneXViewMargin_B = 0;
     [self.view addSubview: self.js_contentView];
     
     self.js_NavigationBar.items = @[self.js_navigationItem];
-    self.js_NavigationBar.barTintColor = [UIColor colorWithRed:245 / 255.0 green:245 / 255.0 blue:245 / 255.0 alpha:1.0];
+    self.js_NavigationBar.barTintColor = BackgroundColour;
     NSDictionary *attributes = @{
                                  NSFontAttributeName: [UIFont systemFontOfSize:18],
                                  NSForegroundColorAttributeName: [UIColor orangeColor]
@@ -129,13 +137,14 @@ static CGFloat const kiPhoneXViewMargin_B = 0;
                                                                           constant: -contentViewBottomConstraint];
     [self.view addConstraint:contentViewBottom];
     
-    
+    // 返回按钮
+    self.js_navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.backButton];
 }
 /** 主视图 */
 - (void)prepareBaseView
 {
     // 设置基类视图背景色
-    self.view.backgroundColor = [UIColor colorWithRed:245 / 255.0 green:245 / 255.0 blue:245 / 255.0 alpha:1.0];
+    self.view.backgroundColor = BackgroundColour;
     // 取消穿透
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
@@ -167,9 +176,23 @@ static CGFloat const kiPhoneXViewMargin_B = 0;
 - (UIView *)js_contentView {
     if (!_js_contentView) {
         _js_contentView = [[UIView alloc] init];
-        _js_contentView.backgroundColor = [UIColor redColor];
+        _js_contentView.backgroundColor = [UIColor whiteColor];
     }
     return _js_contentView;
+}
+- (UIButton *)backButton {
+    if (!_backButton) {
+        _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        //_backButton.frame = CGRectMake(0, 0, SYRealValueW(60), 25);
+//        _backButton.imageEdgeInsets = UIEdgeInsetsMake(0, -20, 0, 20);
+        //[_backButton setImage:[UIImage imageNamed:@"Arrow_Back"] forState:UIControlStateNormal];
+        [_backButton setBackgroundImage:[UIImage imageNamed:@"Arrow_Back"] forState:UIControlStateNormal];
+        [_backButton setTitle:@"" forState:UIControlStateNormal];
+        [_backButton addTarget: self
+                        action: @selector(goBackToParentController:)
+              forControlEvents: UIControlEventTouchUpInside];
+    }
+    return _backButton;
 }
 
 @end

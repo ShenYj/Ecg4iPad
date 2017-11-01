@@ -23,7 +23,7 @@
 
 - (void)setUpRealECGPhoneView
 {
-    self.js_navigationItem.title = @"实时心电";
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -31,6 +31,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - lazy
 
 
 @end

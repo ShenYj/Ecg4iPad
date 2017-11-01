@@ -29,6 +29,7 @@
 // 添加子控制器&设置子控制器标题和图片
 - (void)addChildViewControllers:(JSBaseViewController *)viewController withImageName:(NSString *)imageName withTitle:(NSString *)title
 {
+    viewController.js_navigationItem.title = title;
     JSBaseNavigationController *navigationVC = [[JSBaseNavigationController alloc] initWithRootViewController:viewController];
     UIImage *image = [UIImage imageNamed:imageName];
     UIImage *selectedImage = [[UIImage imageNamed:[NSString stringWithFormat:@"%@_click",imageName]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
