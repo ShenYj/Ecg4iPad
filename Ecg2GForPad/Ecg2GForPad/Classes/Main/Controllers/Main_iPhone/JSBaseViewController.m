@@ -8,6 +8,13 @@
 
 #import "JSBaseViewController.h"
 
+
+/*** iPhone X 适配: 左右下边间距 ***/
+static CGFloat const kiPhoneXViewMargin_L = 0;
+static CGFloat const kiPhoneXViewMargin_R = 0;
+static CGFloat const kiPhoneXViewMargin_B = 0;
+
+
 @interface JSBaseViewController ()
 
 @end
@@ -38,7 +45,6 @@
 /** 导航条视图 */
 - (void)prepareCustomNavigationBar
 {
-    [self.view addSubview: self.js_statusBar];
     [self.view addSubview: self.js_NavigationBar];
     [self.view addSubview: self.js_contentView];
     
@@ -49,55 +55,15 @@
                                  NSForegroundColorAttributeName: [UIColor orangeColor]
                                  };
     [self.js_NavigationBar setTitleTextAttributes: attributes];
-    self.js_statusBar.backgroundColor = self.js_NavigationBar.barTintColor;
-    
-    self.js_statusBar.translatesAutoresizingMaskIntoConstraints = NO;
     self.js_contentView.translatesAutoresizingMaskIntoConstraints = NO;
     self.js_NavigationBar.translatesAutoresizingMaskIntoConstraints = NO;
-    // 控制状态栏的高度
-    CGFloat statusBarHeightConstraint = kStatusBarBaseHeight;
-    if (IS_IPHONE_X) {
-        statusBarHeightConstraint = kStatusBarExtensionHeight;
-    }
-    // statusBar
-    NSLayoutConstraint *statusBarTop = [NSLayoutConstraint constraintWithItem: self.js_statusBar
-                                                                    attribute: NSLayoutAttributeTop
-                                                                    relatedBy: NSLayoutRelationEqual
-                                                                       toItem: self.view
-                                                                    attribute: NSLayoutAttributeTop
-                                                                   multiplier: 1
-                                                                     constant: 0];
-    [self.view addConstraint:statusBarTop];
-    NSLayoutConstraint *statusBarLeft = [NSLayoutConstraint constraintWithItem: self.js_statusBar
-                                                                     attribute: NSLayoutAttributeLeft
-                                                                     relatedBy: NSLayoutRelationEqual
-                                                                        toItem: self.view
-                                                                     attribute: NSLayoutAttributeLeft
-                                                                    multiplier: 1
-                                                                      constant: 0];
-    [self.view addConstraint:statusBarLeft];
-    NSLayoutConstraint *statusBarRight = [NSLayoutConstraint constraintWithItem: self.js_statusBar
-                                                                      attribute: NSLayoutAttributeRight
-                                                                      relatedBy: NSLayoutRelationEqual
-                                                                         toItem: self.view
-                                                                      attribute: NSLayoutAttributeRight
-                                                                     multiplier: 1
-                                                                       constant: 0];
-    [self.view addConstraint:statusBarRight];
-    NSLayoutConstraint *statusBarHeight = [NSLayoutConstraint constraintWithItem: self.js_statusBar
-                                                                       attribute: NSLayoutAttributeHeight
-                                                                       relatedBy: NSLayoutRelationEqual
-                                                                          toItem: nil
-                                                                       attribute: NSLayoutAttributeNotAnAttribute
-                                                                      multiplier: 1
-                                                                        constant: statusBarHeightConstraint];
-    [self.view addConstraint:statusBarHeight];
+
     // navigationBar
     NSLayoutConstraint *navigationBarTop = [NSLayoutConstraint constraintWithItem: self.js_NavigationBar
                                                                         attribute: NSLayoutAttributeTop
                                                                         relatedBy: NSLayoutRelationEqual
-                                                                           toItem: self.js_statusBar
-                                                                        attribute: NSLayoutAttributeBottom
+                                                                           toItem: self.view
+                                                                        attribute: NSLayoutAttributeTop
                                                                        multiplier: 1
                                                                          constant: 0];
     [self.view addConstraint:navigationBarTop];
@@ -126,10 +92,9 @@
                                                                             constant: self.js_NavigationBar.height];
     [self.view addConstraint:navigationBarHeight];
     // contentView
-    //CGFloat contentViewTopConstraint = self.js_statusBar.height + self.js_NavigationBar.height;
-    CGFloat contentViewLeftConstraint = IS_IPHONE_X ? 5 : 0;
-    CGFloat contentViewRightConstraint = IS_IPHONE_X ? 5 : 0;
-    CGFloat contentViewBottomConstraint = IS_IPHONE_X ? 10 : 0;
+    CGFloat contentViewLeftConstraint = IS_IPHONE_X ? kiPhoneXViewMargin_L : 0;
+    CGFloat contentViewRightConstraint = IS_IPHONE_X ? kiPhoneXViewMargin_R : 0;
+    CGFloat contentViewBottomConstraint = IS_IPHONE_X ? kiPhoneXViewMargin_B : 0;
     
     NSLayoutConstraint *contentViewTop = [NSLayoutConstraint constraintWithItem: self.js_contentView
                                                                       attribute: NSLayoutAttributeTop
@@ -153,7 +118,7 @@
                                                                            toItem: self.view
                                                                         attribute: NSLayoutAttributeRight
                                                                        multiplier: 1
-                                                                         constant: contentViewRightConstraint];
+                                                                         constant: -contentViewRightConstraint];
     [self.view addConstraint:contentViewRight];
     NSLayoutConstraint *contentViewBottom = [NSLayoutConstraint constraintWithItem: self.js_contentView
                                                                          attribute: NSLayoutAttributeBottom
@@ -161,7 +126,7 @@
                                                                             toItem: self.view
                                                                          attribute: NSLayoutAttributeBottom
                                                                         multiplier: 1
-                                                                          constant: contentViewBottomConstraint];
+                                                                          constant: -contentViewBottomConstraint];
     [self.view addConstraint:contentViewBottom];
     
     
@@ -170,11 +135,10 @@
 - (void)prepareBaseView
 {
     // 设置基类视图背景色
-    self.view.backgroundColor = [UIColor js_randomColor];
+    self.view.backgroundColor = [UIColor colorWithRed:245 / 255.0 green:245 / 255.0 blue:245 / 255.0 alpha:1.0];
     // 取消穿透
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
-
 
 - (void)didReceiveMemoryWarning
 {
@@ -184,9 +148,13 @@
 
 #pragma mark - lazy
 
-- (UINavigationBar *)js_NavigationBar {
+- (JSNavigationBar *)js_NavigationBar {
     if (!_js_NavigationBar) {
-        _js_NavigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, kNavigationBarBaseHeight)];
+        CGFloat height = kNavigationBarBaseHeight;
+        if (IS_IPHONE_X) {
+            height = kNavigationBarExtensionHeight;
+        }
+        _js_NavigationBar = [[JSNavigationBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, height)];
     }
     return _js_NavigationBar;
 }
@@ -195,12 +163,6 @@
         _js_navigationItem = [[UINavigationItem alloc] init];
     }
     return _js_navigationItem;
-}
-- (UIView *)js_statusBar {
-    if (!_js_statusBar) {
-        _js_statusBar = [[UIView alloc] init];
-    }
-    return _js_statusBar;
 }
 - (UIView *)js_contentView {
     if (!_js_contentView) {

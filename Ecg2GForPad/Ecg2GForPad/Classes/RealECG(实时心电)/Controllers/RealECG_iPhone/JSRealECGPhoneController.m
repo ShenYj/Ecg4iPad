@@ -18,6 +18,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setUpRealECGPhoneView];
+}
+
+- (void)setUpRealECGPhoneView
+{
+    self.js_navigationItem.title = @"实时心电";
 }
 
 - (void)didReceiveMemoryWarning

@@ -11,6 +11,7 @@
 		688238EE1FA6F8E80059B96D /* JSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238ED1FA6F8E80059B96D /* JSTabBarController.m */; };
 		688239151FA6FB800059B96D /* JSSplitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688238EB1FA6F8C50059B96D /* JSSplitController.m */; };
 		688239181FA6FC3F0059B96D /* JSMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 688239171FA6FC3F0059B96D /* JSMasterViewController.m */; };
+		68ADEE6C1FA994430012B500 /* JSNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 68ADEE6B1FA982920012B500 /* JSNavigationBar.m */; };
 		68AF3EB51FA31C4E00C6E455 /* Ecg2GForPadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3EB41FA31C4E00C6E455 /* Ecg2GForPadTests.m */; };
 		68AF3EC01FA31C4F00C6E455 /* Ecg2GForPadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68AF3EBF1FA31C4F00C6E455 /* Ecg2GForPadUITests.m */; };
 		68AF3EDC1FA32B0300C6E455 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68AF3EDB1FA32B0300C6E455 /* Launch Screen.storyboard */; };
@@ -98,6 +99,8 @@
 		688239141FA6F9CA0059B96D /* UIView+Layout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		688239161FA6FC3F0059B96D /* JSMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSMasterViewController.h; sourceTree = "<group>"; };
 		688239171FA6FC3F0059B96D /* JSMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSMasterViewController.m; sourceTree = "<group>"; };
+		68ADEE6A1FA982920012B500 /* JSNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSNavigationBar.h; sourceTree = "<group>"; };
+		68ADEE6B1FA982920012B500 /* JSNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSNavigationBar.m; sourceTree = "<group>"; };
 		68AF3E981FA31C4E00C6E455 /* Ecg2GForPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecg2GForPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68AF3EA91FA31C4E00C6E455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68AF3EB01FA31C4E00C6E455 /* Ecg2GForPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ecg2GForPadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -374,6 +377,8 @@
 		68D05CFD1FA87FE60025BCF8 /* Views_iPhone */ = {
 			isa = PBXGroup;
 			children = (
+				68ADEE6A1FA982920012B500 /* JSNavigationBar.h */,
+				68ADEE6B1FA982920012B500 /* JSNavigationBar.m */,
 				68D05CFE1FA87FE60025BCF8 /* JSBaseNavBarButtonItem.h */,
 				68D05CFF1FA87FE60025BCF8 /* JSBaseNavBarButtonItem.m */,
 			);
@@ -741,6 +746,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68ADEE6C1FA994430012B500 /* JSNavigationBar.m in Sources */,
 				68E9B8E21FA70DFE00C73FFB /* NSString+JSJSONSerialize.m in Sources */,
 				68E9B8E11FA70DF900C73FFB /* UIFont+JSMicrosoftYaHeiFont.m in Sources */,
 				68E9B8DF1FA70DF100C73FFB /* NSString+JSExtension.m in Sources */,
