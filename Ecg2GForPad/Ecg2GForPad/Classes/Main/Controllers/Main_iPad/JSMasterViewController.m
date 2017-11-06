@@ -31,7 +31,6 @@
 - (void)setUpMasterView
 {
     self.view.backgroundColor = [UIColor js_randomColor];
-    //
     // 设置容器视图
     [self prepareContainerView];
 }

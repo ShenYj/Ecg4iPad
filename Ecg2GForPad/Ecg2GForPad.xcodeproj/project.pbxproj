@@ -253,6 +253,13 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		68A3F9981FB0103F008D75D6 /* Views_iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views_iPad;
+			sourceTree = "<group>";
+		};
 		68AF3E8F1FA31C4E00C6E455 = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +470,7 @@
 		F702E4E91FA4D73F008723AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				68A3F9981FB0103F008D75D6 /* Views_iPad */,
 				68D05CFD1FA87FE60025BCF8 /* Views_iPhone */,
 			);
 			path = Views;
@@ -919,7 +927,7 @@
 				DEVELOPMENT_TEAM = 3P982ZUUW8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SupportingFiles/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Ecg2GForPad/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guanhu.Ecg.Ecg2GForPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -936,7 +944,7 @@
 				DEVELOPMENT_TEAM = 3P982ZUUW8;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PRODUCT_NAME)/SupportingFiles/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Ecg2GForPad/SupportingFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.guanhu.Ecg.Ecg2GForPad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
